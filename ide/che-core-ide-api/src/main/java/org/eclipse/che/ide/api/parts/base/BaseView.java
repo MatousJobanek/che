@@ -17,6 +17,7 @@ import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.FocusWidget;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 import javax.validation.constraints.NotNull;
 import org.eclipse.che.ide.api.mvp.View;
@@ -36,7 +37,7 @@ public abstract class BaseView<T extends BaseActionDelegate> extends Composite
   private DockLayoutPanel container;
 
   protected T delegate;
-
+  protected Label additionalInfoLabel;
   protected FocusWidget lastFocused;
 
   /** Indicates whether this view is focused */
@@ -116,5 +117,9 @@ public abstract class BaseView<T extends BaseActionDelegate> extends Composite
   /** Handles loosing the focus. */
   protected void blurView() {
     getElement().blur();
+  }
+
+  protected void setAdditionalInfoLabel(String titleLabel) {
+    this.additionalInfoLabel.setText(titleLabel);
   }
 }

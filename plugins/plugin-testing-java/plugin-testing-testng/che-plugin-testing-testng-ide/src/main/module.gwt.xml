@@ -13,6 +13,7 @@
 <module>
     <inherits name="com.google.gwt.user.User"/>
     <inherits name="com.google.gwt.inject.Inject"/>
+    <inherits name="org.eclipse.che.plugin.optimized.testing.OptimizedTestingExtension"/>
 
     <source path="ide"/>
 </module>

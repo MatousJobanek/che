@@ -42,6 +42,7 @@
         <module>plugin-github</module>
         <module>plugin-dashboard</module>
         <module>plugin-gwt</module>
+        <module>plugin-optimized-testing</module>
         <module>plugin-python</module>
         <module>plugin-cpp</module>
         <module>plugin-csharp</module>
